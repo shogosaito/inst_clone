@@ -6,7 +6,6 @@
     </section>
     <%= link_to "プロフィール編集", edit_user_path(current_user) %>
     <p>ユーザーネーム:<%= @user.user_name %></p>
-    <p>フルネーム:<%= @user.full_name %></p>
     <p>ウェブサイト:</p><%= @user.weburl %>
     <p>自己紹介</p>
     <% if @user.selfintroduction.blank?%>
@@ -30,10 +29,10 @@
       <span class="content"><%= micropost.content %></span>
       <br>
       <%= render "likes/like", micropost: micropost %>
-    <span class="timestamp"><%= time_ago_in_words(micropost.created_at) %> 前.</span>
-  </ol>
+      <span class="timestamp"><%= time_ago_in_words(micropost.created_at) %> 前.</span>
+    </ol>
     <% end %>
-  <% end %>
+    <% end %>
   </div>
   <% else %>
   <h3>投稿なし</h3>

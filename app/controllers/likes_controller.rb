@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
-before_action :set_variables
+  before_action :set_variables
   # def index
   #   @like_microposts = current_user.like_microposts
   # end
@@ -16,17 +16,17 @@ before_action :set_variables
     like = current_user.likes.find_by(micropost_id: @micropost.id)
     like.destroy
     @micropost.reload
-    end
+  end
 
 
   private
 
   def set_like
-         @micropost = Micropost.find(params[:Micropost_id])
+    @micropost = Micropost.find(params[:micropost_id])
   end
 
   def set_variables
-      @micropost = Micropost.find(params[:micropost_id])
-      @id_name = "#like-link-#{@micropost.id}"
-    end
- end
+    @micropost = Micropost.find(params[:micropost_id])
+    @id_name = "#like-link-#{@micropost.id}"
+  end
+end

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  # roo to: 'microposts#index'
   get '/auth/:provider/callback',    to: 'users#create',       as: :auth_callback
   get '/auth/failure',               to: 'users#auth_failure', as: :auth_failure
 
@@ -19,7 +18,6 @@ Rails.application.routes.draw do
   get '/notifications',to:'notifications#index'
   get 'users/:user_id/passwords/edit',to:'passwords#edit'
   get 'users/:user_id/passwords/update',to:'passwords#update'
-  # devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   resources :users do
     resources  :passwords,           only: [:edit, :update]

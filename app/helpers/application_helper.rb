@@ -1,6 +1,6 @@
 module ApplicationHelper
-include SessionsHelper
-include NotificationsHelper
+  include SessionsHelper
+  include NotificationsHelper
   # ページごとの完全なタイトルを返します。
   def full_title(page_title = '')
     base_title = "instaClone"

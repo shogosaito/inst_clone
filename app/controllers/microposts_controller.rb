@@ -6,7 +6,7 @@ class MicropostsController < ApplicationController
   def index
     @microposts = Micropost.all  #投稿一覧を表示させるために全取得
     @micropost =  Micropost.new   #投稿一覧画面で新規投稿を行うので、formのパラメータ用にPostオブジェクトを取得
-    end
+  end
 
   def new
     @micropost = Micropost.new
@@ -49,11 +49,6 @@ class MicropostsController < ApplicationController
     flash[:success] = "Micropost deleted"
     redirect_to root_url
   end
-
-  # def search
-  #     @microposts = Micropost.search(params[:search])
-  #   end
-
 
   private
 

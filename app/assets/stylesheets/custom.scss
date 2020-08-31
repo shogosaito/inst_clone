@@ -284,14 +284,14 @@ span.image {
 // /* 検索ボックス */
 dl.searchbox{
   position: relative;
-   box-sizing: border-box;
-   border: 2px solid #3879D9;
-   display: block;
-   padding: 3px 10px;
-   border-radius: 3px;
-   height: 2.3em;
-   width: 265px;
-   overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid #3879D9;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 3px;
+  height: 2.3em;
+  width: 265px;
+  overflow: hidden;
 
 }
 // .navbar-nav > li  {
@@ -306,18 +306,18 @@ dl.searchbox dt input{
   padding-top: -25px;
 }
 dl.searchbox dd{
-    cursor: pointer;
-    font-family: FontAwesome;
-    border: none;
-    background: #808080;
-    color: #fff;
-    position: absolute;
-    width: 3.5em;
-    height: 3.0em;
-    right:0px;
-    top: -5px;
-    // outline : none;
-  }
+  cursor: pointer;
+  font-family: FontAwesome;
+  border: none;
+  background: #808080;
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -5px;
+  // outline : none;
+}
 
 .search-btn{
   // display:block;
@@ -334,14 +334,14 @@ dl.searchbox dd{
 }
 
 .item{
-float:left;
-width:33%;
-margin: 20px 0 20px ;
+  float:left;
+  width:33%;
+  margin: 20px 0 20px ;
 }
 
 .item:hover {
-      opacity: 0.8;
-    }
+  opacity: 0.8;
+}
 .item.img{
-      width: 200px;
-  }
+  width: 200px;
+}

@@ -5,7 +5,7 @@
 <% @search_microposts.each do |micropost| %>
 <span class="user"><a href="/users/<%= micropost.user.id %>"><%= micropost.user.user_name %></a></span>
 <br>
-<span class="image"><a href="/microposts/<%= micropost.id %>"><%= image_tag(micropost.image) if micropost.image.attached? %></a></span>
+<span class="image"><a href="/microposts/<%= micropost.id %>"><%= image_tag(micropost.image,size:"600x400") if micropost.image.attached? %></a></span>
 <br>
 <span class="content"><%= micropost.content %></span>
 <br>
@@ -14,7 +14,7 @@
 <% @microposts.each do |micropot| %>
 <span class="user"><a href="/users/<%= micropost.user.id %>"><%= micropost.user.user_name %></a></span>
 <br>
-<span class="image"><a href="/microposts/<%= micropost.id %>"><%= image_tag(micropost.image) if micropost.image.attached? %></a></span>
+<span class="image"><a href="/microposts/<%= micropost.id %>"><%= image_tag(micropost.image,size:"600x400") if micropost.image.attached? %></a></span>
 <br>
 <span class="content"><%= micropost.content %></span>
 <% end %>

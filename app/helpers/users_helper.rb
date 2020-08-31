@@ -3,7 +3,7 @@ module UsersHelper
     if user.image
       image_tag "/user_images/#{user.image}"
     else
-        image_tag "wanko.png"
-      end
+      image_tag "wanko.png"
     end
   end
+end
